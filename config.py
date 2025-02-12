@@ -3,5 +3,5 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///database.db")
-SECRET_KEY = os.getenv("SECRET_KEY", "sua-chave-secreta")
+SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", "sqlite:///local.db")
+SQLALCHEMY_TRACK_MODIFICATIONS = False
